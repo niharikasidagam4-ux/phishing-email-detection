@@ -1,0 +1,261 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background:
+        linear-gradient(135deg, #172554, #1e3a8a);
+
+    min-height: 100vh;
+
+    padding: 20px;
+}
+
+
+.container {
+
+    max-width: 750px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.3);
+}
+
+
+h1 {
+
+    text-align: center;
+
+    color: #172554;
+
+    margin-bottom: 10px;
+}
+
+
+.subtitle {
+
+    text-align: center;
+
+    color: #6b7280;
+
+    margin-bottom: 25px;
+}
+
+
+.input-section {
+
+    background: #f3f4f6;
+
+    padding: 20px;
+
+    border-radius: 12px;
+}
+
+
+label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+textarea {
+
+    width: 100%;
+
+    height: 180px;
+
+    padding: 15px;
+
+    border: 2px solid #d1d5db;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    resize: vertical;
+
+}
+
+
+textarea:focus {
+
+    outline: none;
+
+    border-color: #2563eb;
+}
+
+
+button {
+
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+
+    background: #1d4ed8;
+}
+
+
+.result {
+
+    display: none;
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    background: #f8fafc;
+}
+
+
+#prediction {
+
+    margin-bottom: 10px;
+}
+
+
+#confidence {
+
+    color: #4b5563;
+
+    margin-bottom: 15px;
+}
+
+
+.meter {
+
+    width: 100%;
+
+    height: 15px;
+
+    background: #e5e7eb;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+#meterBar {
+
+    height: 100%;
+
+    width: 0%;
+
+    transition: 0.5s;
+}
+
+
+.features {
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    background: #f8fafc;
+
+    border-radius: 12px;
+}
+
+
+.features h2 {
+
+    margin-bottom: 15px;
+
+    color: #172554;
+}
+
+
+.feature {
+
+    padding: 10px;
+
+    margin: 8px 0;
+
+    border-radius: 8px;
+
+    background: #eef2ff;
+}
+
+
+.info {
+
+    margin-top: 25px;
+
+    padding: 18px;
+
+    background: #eff6ff;
+
+    border-radius: 10px;
+}
+
+
+.info h3 {
+
+    color: #1d4ed8;
+
+    margin-bottom: 8px;
+}
+
+
+.info p {
+
+    line-height: 1.5;
+
+    color: #374151;
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+
+        padding: 10px;
+    }
+
+    .container {
+
+        padding: 20px;
+    }
+
+}
