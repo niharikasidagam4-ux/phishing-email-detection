@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Phishing Email Detection</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📧 Phishing Email Detection</h1>
+
+    <p class="subtitle">
+        Analyze an email and identify whether it is Phishing or Safe.
+    </p>
+
+
+    <div class="input-section">
+
+        <label>Enter Email Content</label>
+
+        <textarea
+            id="emailText"
+            placeholder="Paste or type the email content here..."
+        ></textarea>
+
+        <button onclick="detectPhishing()">
+            Analyze Email
+        </button>
+
+    </div>
+
+
+    <div id="result" class="result">
+
+        <h2 id="prediction"></h2>
+
+        <p id="confidence"></p>
+
+        <div class="meter">
+
+            <div id="meterBar"></div>
+
+        </div>
+
+    </div>
+
+
+    <div class="features">
+
+        <h2>Detected Features</h2>
+
+        <div id="featureList"></div>
+
+    </div>
+
+
+    <div class="info">
+
+        <h3>How it works</h3>
+
+        <p>
+            The system analyzes common phishing indicators such as
+            suspicious links, urgent language, requests for passwords,
+            account verification and financial information.
+        </p>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
